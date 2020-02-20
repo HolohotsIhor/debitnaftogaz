@@ -7,6 +7,7 @@
 5.  About us
 6.  Banner
 7.  Documents
+8.  What we can
 
 */
 /* 1.  Fonts including */
@@ -1061,7 +1062,7 @@ textarea {
       border-bottom: 0; }
       @media only screen and (min-device-width: 992px) {
         .banner-box .anim-wrapp h3 {
-          width: 38%;
+          width: 34%;
           position: absolute;
           top: -30px;
           right: -15px;
@@ -1115,7 +1116,7 @@ textarea {
 /* 7.  Documents */
 .documents h2 {
   color: #fff;
-  width: 100%; }
+  display: inline-block; }
   .documents h2 span {
     color: #0eb0ee; }
 
@@ -1142,10 +1143,12 @@ textarea {
       border-bottom: 0;
       margin-bottom: 0;
       padding-bottom: 0;
-      line-height: 15px; }
+      line-height: 15px;
+      font-size: 18px; }
     .documents .documents__item-box .documents__item-box-content p {
       color: #fff;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 18px; }
 
 .no-webp .documents {
   background-image: url(../img/documents-bg.jpg);
@@ -1156,5 +1159,16 @@ textarea {
 .webp .documents {
   background-image: url(../img/documents-bg.webp);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* 8.  What we can */
+.no-webp .what-we-can {
+  background-image: url(../img/bg-what-we-can.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.webp .what-we-can {
+  background-image: url(../img/bg-what-we-can.webp);
   background-repeat: no-repeat;
   background-size: cover; }

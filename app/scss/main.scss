@@ -7,6 +7,7 @@
 5.  About us
 6.  Banner
 7.  Documents
+8.  What we can
 
 */
 
@@ -1310,7 +1311,7 @@ textarea {
             border-bottom: 0;
 
             @media only screen and (min-device-width: 992px) {
-                width: 38%;
+                width: 34%;
                 position: absolute;
                 top: -30px;
                 right: -15px;
@@ -1425,7 +1426,7 @@ textarea {
 
     h2 {
         color: $white;
-        width: 100%;
+        display: inline-block;
 
         span {
             color: $lightBlue;
@@ -1460,11 +1461,13 @@ textarea {
                 margin-bottom: 0;
                 padding-bottom: 0;
                 line-height: 15px;
+                font-size: 18px;
             }
 
             p {
                 color: $white;
                 font-weight: bold;
+                font-size: 18px;
             }
         }
     }
@@ -1480,6 +1483,23 @@ textarea {
 .webp .documents {
     background-image: url(../img/documents-bg.webp);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 8.  What we can */
+.what-we-can {
+
+}
+
+.no-webp .what-we-can {
+    background-image: url(../img/bg-what-we-can.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.webp .what-we-can {
+    background-image: url(../img/bg-what-we-can.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
