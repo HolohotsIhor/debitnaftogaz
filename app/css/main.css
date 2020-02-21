@@ -1040,77 +1040,98 @@ textarea {
       position: absolute;
       bottom: 55px;
       left: 0; } }
-  .banner-box .anim-wrapp {
+  .banner-box .map-wrapp {
     position: relative; }
     @media only screen and (min-device-width: 992px) {
-      .banner-box .anim-wrapp {
+      .banner-box .map-wrapp {
         text-align: right; } }
-    .banner-box .anim-wrapp source,
-    .banner-box .anim-wrapp img {
+    .banner-box .map-wrapp source,
+    .banner-box .map-wrapp img {
       max-width: 100%;
       margin-bottom: 15px; }
       @media only screen and (min-device-width: 992px) {
-        .banner-box .anim-wrapp source,
-        .banner-box .anim-wrapp img {
+        .banner-box .map-wrapp source,
+        .banner-box .map-wrapp img {
           max-width: 80%; } }
       @media only screen and (min-device-width: 1200px) {
-        .banner-box .anim-wrapp source,
-        .banner-box .anim-wrapp img {
+        .banner-box .map-wrapp source,
+        .banner-box .map-wrapp img {
           max-width: 90%; } }
-    .banner-box .anim-wrapp h3 {
+    .banner-box .map-wrapp h3 {
       color: #30355d;
       border-bottom: 0; }
       @media only screen and (min-device-width: 992px) {
-        .banner-box .anim-wrapp h3 {
+        .banner-box .map-wrapp h3 {
           width: 34%;
           position: absolute;
           top: -30px;
           right: -15px;
           letter-spacing: -1px; } }
-    .banner-box .anim-wrapp h6 {
+    .banner-box .map-wrapp h6 {
       color: #30355d;
       text-align: left; }
-    .banner-box .anim-wrapp ul {
+      .banner-box .map-wrapp h6.last {
+        -webkit-animation-delay: 1s;
+                animation-delay: 1s; }
+    .banner-box .map-wrapp ul {
       padding-left: 60px; }
-      .banner-box .anim-wrapp ul li {
+      .banner-box .map-wrapp ul li {
         list-style: none;
         text-align: left;
         position: relative;
         line-height: 19px;
         margin-bottom: 12px;
         color: #333; }
-        .banner-box .anim-wrapp ul li::after {
+        .banner-box .map-wrapp ul li::after {
           content: "";
           position: absolute;
           left: -60px;
           top: 0;
           width: 50px;
           height: 20px; }
-      .banner-box .anim-wrapp ul.first li:nth-child(1)::after {
-        background-color: #cbe7b6; }
-      .banner-box .anim-wrapp ul.first li:nth-child(2)::after {
-        background-color: #fff541; }
-      .banner-box .anim-wrapp ul.first li:nth-child(3)::after {
-        background-color: #ffa130; }
-      .banner-box .anim-wrapp ul.first li:nth-child(4)::after {
-        top: 7px;
-        background: -o-repeating-linear-gradient(150deg, #f05c50 0, #f05c50 1px, transparent 1px, transparent 2px);
-        background: repeating-linear-gradient(-60deg, #f05c50 0, #f05c50 1px, transparent 1px, transparent 2px);
-        border-radius: 50%; }
-        @media only screen and (min-device-width: 389px) {
-          .banner-box .anim-wrapp ul.first li:nth-child(4)::after {
-            top: 0; } }
-      .banner-box .anim-wrapp ul.second li:nth-child(1)::after {
-        background-image: -webkit-repeating-radial-gradient(center center, black, black 1px, transparent 1px, transparent 100%);
-        background-image: -o-repeating-radial-gradient(center center, black, black 1px, transparent 1px, transparent 100%);
-        background-image: repeating-radial-gradient(center center, black, black 1px, transparent 1px, transparent 100%);
-        background-size: 4px 4px; }
-      .banner-box .anim-wrapp ul.second li:nth-child(2)::after {
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), color-stop(50%, #4b6dc4));
-        background: -o-linear-gradient(#fff 50%, #4b6dc4 50%);
-        background: linear-gradient(#fff 50%, #4b6dc4 50%);
-        background-size: 100% 2px; }
-      .banner-box .anim-wrapp ul.second li::after {
+      .banner-box .map-wrapp ul.first li:nth-child(1) {
+        -webkit-animation-delay: .2s;
+                animation-delay: .2s; }
+        .banner-box .map-wrapp ul.first li:nth-child(1)::after {
+          background-color: #cbe7b6; }
+      .banner-box .map-wrapp ul.first li:nth-child(2) {
+        -webkit-animation-delay: .4s;
+                animation-delay: .4s; }
+        .banner-box .map-wrapp ul.first li:nth-child(2)::after {
+          background-color: #fff541; }
+      .banner-box .map-wrapp ul.first li:nth-child(3) {
+        -webkit-animation-delay: .6s;
+                animation-delay: .6s; }
+        .banner-box .map-wrapp ul.first li:nth-child(3)::after {
+          background-color: #ffa130; }
+      .banner-box .map-wrapp ul.first li:nth-child(4) {
+        -webkit-animation-delay: .8s;
+                animation-delay: .8s; }
+        .banner-box .map-wrapp ul.first li:nth-child(4)::after {
+          top: 7px;
+          background: -o-repeating-linear-gradient(150deg, #f05c50 0, #f05c50 1px, transparent 1px, transparent 2px);
+          background: repeating-linear-gradient(-60deg, #f05c50 0, #f05c50 1px, transparent 1px, transparent 2px);
+          border-radius: 50%; }
+          @media only screen and (min-device-width: 389px) {
+            .banner-box .map-wrapp ul.first li:nth-child(4)::after {
+              top: 0; } }
+      .banner-box .map-wrapp ul.second li:nth-child(1) {
+        -webkit-animation-delay: 1.2s;
+                animation-delay: 1.2s; }
+        .banner-box .map-wrapp ul.second li:nth-child(1)::after {
+          background-image: -webkit-repeating-radial-gradient(center center, black, black 1px, transparent 1px, transparent 100%);
+          background-image: -o-repeating-radial-gradient(center center, black, black 1px, transparent 1px, transparent 100%);
+          background-image: repeating-radial-gradient(center center, black, black 1px, transparent 1px, transparent 100%);
+          background-size: 4px 4px; }
+      .banner-box .map-wrapp ul.second li:nth-child(2) {
+        -webkit-animation-delay: 1.4s;
+                animation-delay: 1.4s; }
+        .banner-box .map-wrapp ul.second li:nth-child(2)::after {
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), color-stop(50%, #4b6dc4));
+          background: -o-linear-gradient(#fff 50%, #4b6dc4 50%);
+          background: linear-gradient(#fff 50%, #4b6dc4 50%);
+          background-size: 100% 2px; }
+      .banner-box .map-wrapp ul.second li::after {
         border-radius: 50%; }
 
 /* 7.  Documents */
@@ -1172,3 +1193,18 @@ textarea {
   background-image: url(../img/bg-what-we-can.webp);
   background-repeat: no-repeat;
   background-size: cover; }
+  .webp .what-we-can h2 {
+    color: #30355d;
+    display: inline-block; }
+    .webp .what-we-can h2 span {
+      color: #0eb0ee; }
+  .webp .what-we-can .what-we-can__child-item:nth-child(3) i {
+    font-size: 83px;
+    line-height: 70px; }
+  .webp .what-we-can .what-we-can__child-item i {
+    color: #0eb0ee;
+    background: #30355d;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 70px; }

@@ -1285,7 +1285,7 @@ textarea {
         }
     }
 
-    .anim-wrapp {
+    .map-wrapp {
         position: relative;
 
         @media only screen and (min-device-width: 992px) {
@@ -1322,6 +1322,10 @@ textarea {
         h6 {
             color: $blue;
             text-align: left;
+
+            &.last{
+                animation-delay: 1s;
+            }
         }
 
         ul {
@@ -1350,8 +1354,8 @@ textarea {
 
                 li {
 
-
                     &:nth-child(1) {
+                        animation-delay: .2s;
 
                         &::after {
                             background-color: #cbe7b6;
@@ -1359,6 +1363,7 @@ textarea {
                     }
 
                     &:nth-child(2) {
+                        animation-delay: .4s;
 
                         &::after {
                             background-color: #fff541;
@@ -1366,6 +1371,7 @@ textarea {
                     }
 
                     &:nth-child(3) {
+                        animation-delay: .6s;
 
                         &::after {
                             background-color: #ffa130;
@@ -1373,6 +1379,7 @@ textarea {
                     }
 
                     &:nth-child(4) {
+                        animation-delay: .8s;
 
                         &::after {
                             top: 7px;
@@ -1392,6 +1399,7 @@ textarea {
                 li {
 
                     &:nth-child(1) {
+                        animation-delay: 1.2s;
 
                         &::after {
                             background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 1px, transparent 1px, transparent 100%);
@@ -1405,6 +1413,7 @@ textarea {
                     }
 
                     &:nth-child(2) {
+                        animation-delay: 1.4s;
 
                         &::after {
                             background: linear-gradient(#fff 50%, #4b6dc4 50%);
@@ -1502,4 +1511,33 @@ textarea {
     background-image: url(../img/bg-what-we-can.webp);
     background-repeat: no-repeat;
     background-size: cover;
+
+    h2 {
+        color: $blue;
+        display: inline-block;
+
+        span {
+            color: $lightBlue;
+        }
+    }
+
+    .what-we-can__child-item{
+
+        &:nth-child(3){
+
+            i{
+                font-size: 83px;
+                line-height: 70px;
+            }
+        }
+
+        i{
+            color: $lightBlue;
+            background: $blue;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            font-size: 70px;
+        }
+    }
 }
