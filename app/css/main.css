@@ -8,6 +8,9 @@
 6.  Banner
 7.  Documents
 8.  What we can
+9.  Our project
+10. Our partners
+11. Footer
 
 */
 /* 1.  Fonts including */
@@ -294,11 +297,12 @@ header {
       color: #fff;
       width: 38px;
       height: 38px;
-      font-size: 16px;
+      font-size: 28px;
       border-radius: 19px;
       border: solid 1px #8ae3ff;
       line-height: 38px;
-      text-align: center; }
+      text-align: center;
+      padding-left: 2px; }
   header .header__phone .header__phone-text {
     display: block;
     color: #8ae3ff; }
@@ -1034,7 +1038,8 @@ textarea {
 
 /* 6.  Banner */
 .banner-box {
-  text-align: center; }
+  text-align: center;
+  background-color: #f5f6fb; }
   @media only screen and (min-device-width: 992px) {
     .banner-box .banner-box__map-info-clasification {
       position: absolute;
@@ -1184,6 +1189,78 @@ textarea {
   background-size: cover; }
 
 /* 8.  What we can */
+.what-we-can h2 {
+  color: #30355d;
+  display: inline-block;
+  margin-bottom: 30px; }
+  @media only screen and (min-device-width: 1200px) {
+    .what-we-can h2 {
+      margin-bottom: 0; } }
+  .what-we-can h2 span {
+    color: #0eb0ee; }
+
+.what-we-can .row .what-we-can__child-item {
+  margin-bottom: 20px; }
+  @media only screen and (min-device-width: 992px) {
+    .what-we-can .row .what-we-can__child-item {
+      margin-bottom: 40px; } }
+  .what-we-can .row .what-we-can__child-item .wrapp {
+    background: #30355d;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 70px; }
+  .what-we-can .row .what-we-can__child-item i {
+    margin-bottom: 10px; }
+  .what-we-can .row .what-we-can__child-item h3 {
+    position: relative;
+    font-family: Kanit, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    border-bottom: 0;
+    padding-bottom: 13px; }
+    .what-we-can .row .what-we-can__child-item h3::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #0eb0ee;
+      height: 2px;
+      width: 30%; }
+  .what-we-can .row .what-we-can__child-item p {
+    color: #7f7e7c;
+    font-size: 15px; }
+
+.what-we-can .row:nth-child(1) .what-we-can__child-item:nth-child(3) i {
+  font-size: 83px;
+  line-height: 70px; }
+
+.what-we-can .row:nth-child(1) .what-we-can__child-item:nth-child(4) img,
+.what-we-can .row:nth-child(1) .what-we-can__child-item:nth-child(4) source {
+  height: 70px;
+  margin-top: -54px;
+  margin-left: 3px; }
+
+.what-we-can .row:nth-child(1) .what-we-can__child-item i {
+  color: #0eb0ee;
+  background: #30355d;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 70px; }
+
+.what-we-can .row:nth-child(2) .what-we-can__child-item:nth-child(1) i {
+  content: "f5d2"; }
+
+.what-we-can .row:nth-child(2) .what-we-can__child-item i {
+  color: #0eb0ee;
+  background: #30355d;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 70px; }
+
 .no-webp .what-we-can {
   background-image: url(../img/bg-what-we-can.jpg);
   background-repeat: no-repeat;
@@ -1193,18 +1270,152 @@ textarea {
   background-image: url(../img/bg-what-we-can.webp);
   background-repeat: no-repeat;
   background-size: cover; }
-  .webp .what-we-can h2 {
-    color: #30355d;
+
+/* 9.  Our project */
+.our-project {
+  background-color: #f5f6fb; }
+  .our-project h2 {
     display: inline-block; }
-    .webp .what-we-can h2 span {
+    .our-project h2 span {
       color: #0eb0ee; }
-  .webp .what-we-can .what-we-can__child-item:nth-child(3) i {
-    font-size: 83px;
-    line-height: 70px; }
-  .webp .what-we-can .what-we-can__child-item i {
-    color: #0eb0ee;
-    background: #30355d;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    font-size: 70px; }
+  .our-project .our-project__phone-wrapper {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-left: 15px; }
+    @media only screen and (min-device-width: 1199px) {
+      .our-project .our-project__phone-wrapper {
+        margin-left: 0;
+        margin-right: 5px; } }
+    .our-project .our-project__phone-wrapper i {
+      color: #0eb0ee;
+      width: 38px;
+      height: 38px;
+      border-radius: 19px;
+      border: solid 1px #8ae3ff;
+      line-height: 38px;
+      text-align: center;
+      padding-left: 2px;
+      font-size: 23px; }
+  .our-project .our-project__phone-text {
+    display: block;
+    color: #30355d;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 14px;
+    padding-top: 5px; }
+    @media only screen and (min-device-width: 992px) {
+      .our-project .our-project__phone-text {
+        padding-left: 55px; } }
+    .our-project .our-project__phone-text strong {
+      color: #aab9cd;
+      font-weight: bold;
+      font-family: 'Helvetica-Bold', sans-serif; }
+  .our-project .our-project__article-box--btn-wrapp {
+    display: none;
+    padding-top: 40px; }
+    @media only screen and (min-device-width: 992px) {
+      .our-project .our-project__article-box--btn-wrapp {
+        display: block; } }
+  .our-project .row .our-project__child-item {
+    margin-bottom: 20px;
+    text-align: center; }
+    .our-project .row .our-project__child-item source, .our-project .row .our-project__child-item img {
+      margin-bottom: 10px; }
+    .our-project .row .our-project__child-item h4 {
+      color: #0eb0ee;
+      font-size: 22px;
+      margin-bottom: 0;
+      border-bottom: 0; }
+    .our-project .row .our-project__child-item ul li {
+      list-style: none; }
+      .our-project .row .our-project__child-item ul li a {
+        color: #aab9cd;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s; }
+        .our-project .row .our-project__child-item ul li a:hover {
+          color: #fff; }
+    .our-project .row .our-project__child-item:nth-child(1) {
+      display: none; }
+      @media only screen and (min-device-width: 992px) {
+        .our-project .row .our-project__child-item:nth-child(1) {
+          display: block; } }
+    .our-project .row .our-project__child-item .wrapp {
+      background-color: #30355d;
+      padding: 30px 50px;
+      border-bottom: 4px solid #0eb0ee; }
+
+/* 10. Our partners */
+.our-partners .our-partners__child-item img,
+.our-partners .our-partners__child-item source {
+  opacity: .8;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; }
+  .our-partners .our-partners__child-item img:hover,
+  .our-partners .our-partners__child-item source:hover {
+    opacity: 1; }
+
+/* 11. Footer */
+footer {
+  background-color: #30355d;
+  padding: 30px 0 0 0; }
+  @media only screen and (min-device-width: 992px) {
+    footer {
+      padding: 50px 0 0 0; } }
+  footer .footer__child-item {
+    color: #fff;
+    font-size: 15px;
+    line-height: 23px; }
+    footer .footer__child-item source, footer .footer__child-item img {
+      margin-bottom: 20px; }
+    footer .footer__child-item .footer__item-wrapper {
+      margin-bottom: 20px; }
+      footer .footer__child-item .footer__item-wrapper .footer__phone-wrapper {
+        display: block;
+        float: left;
+        margin-right: 10px;
+        margin-left: 15px; }
+        @media only screen and (min-device-width: 1199px) {
+          footer .footer__child-item .footer__item-wrapper .footer__phone-wrapper {
+            margin-left: 0;
+            margin-right: 5px; } }
+        footer .footer__child-item .footer__item-wrapper .footer__phone-wrapper i {
+          color: #fff;
+          width: 38px;
+          height: 38px;
+          border-radius: 19px;
+          border: solid 1px #8ae3ff;
+          line-height: 38px;
+          text-align: center;
+          padding-left: 2px;
+          font-size: 23px; }
+      footer .footer__child-item .footer__item-wrapper .footer__phone-text {
+        display: block;
+        color: #0eb0ee;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 18px; }
+        @media only screen and (min-device-width: 992px) {
+          footer .footer__child-item .footer__item-wrapper .footer__phone-text {
+            padding-left: 65px; } }
+        footer .footer__child-item .footer__item-wrapper .footer__phone-text strong {
+          color: #fff;
+          font-weight: bold;
+          font-family: 'Helvetica-Bold', sans-serif;
+          font-size: 18px; }
+  footer .bottom-footer {
+    border-top: solid 1px #fff;
+    padding: 30px 0;
+    text-align: center;
+    color: #fff; }
+    footer .bottom-footer a i {
+      color: #0eb0ee;
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s; }
+      footer .bottom-footer a i:hover {
+        color: #fff; }
