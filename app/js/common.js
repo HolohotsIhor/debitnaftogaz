@@ -24,21 +24,32 @@ $(document).ready(function() {
         $('.toggle_mnu_close').css('display', 'none');
     });
 
-    
-
-    /* Parallax 
-    $('.parallax-window').parallax({imageSrc: 'img/background.jpg'}); */
-
-    /* Resize
-    function heightDetect(){
-        $(".parallax-window").css("height", $(window).height());    
+    /********** Sticky menu **********/
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() { myFunction() };
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+    // Проверка при перезагрузке странице в уже опущенном положении (дописано)
+    if (window.pageYOffset > sticky) {
+        navbar.classList.remove("no-sticky");
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+        navbar.classList.add("no-sticky");
     }
-    heightDetect();
-    $(window).resize(function(){
-        heightDetect();
-    });
-    */
-
+    // Проверка при перезагрузке странице в уже опущенном положении (дописано)
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            navbar.classList.remove("no-sticky");
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+            navbar.classList.add("no-sticky");
+        }
+    }
     /* Scrool animation */
     $(window).scroll(function() {
 
@@ -63,4 +74,24 @@ $(document).ready(function() {
             }
         });
     });
+
+    /*********** Scrool to top ************/
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+});
+
+/* Owl carousel */
+/********************** OWL carousel ***************/
+  
 });

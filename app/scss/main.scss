@@ -11,6 +11,7 @@
 9.  Our project
 10. Our partners
 11. Footer
+12. Scrool to top
 
 */
 
@@ -23,6 +24,7 @@
     font-style: normal;
     font-weight: normal;
     src: url("../fonts/ArialMT/ArialMT.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialMT/ArialMT.woff") format("woff"), url("../fonts/ArialMT/ArialMT.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
@@ -30,6 +32,7 @@
     font-style: normal;
     font-weight: bold;
     src: url("../fonts/Arial-BoldMT/Arial-BoldMT.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-BoldMT/Arial-BoldMT.woff") format("woff"), url("../fonts/Arial-BoldMT/Arial-BoldMT.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
@@ -37,6 +40,7 @@
     font-style: normal;
     font-weight: normal;
     src: url("../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
@@ -44,6 +48,7 @@
     font-style: normal;
     font-weight: normal;
     src: url("../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
@@ -51,6 +56,7 @@
     font-style: normal;
     font-weight: normal;
     src: url("../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.ttf") format("truetype");
+    font-display: swap;
 }
 
 /* 2.  General styles */
@@ -239,6 +245,21 @@ a {
 /* Header */
 header {
     background-color: $lightBlue;
+
+    &.sticky {
+
+        nav {
+            top: 0;
+            left: 0;
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+
+            ul {
+                margin-bottom: 0;
+            }
+        }
+    }
 
     .header__logo-box {
         background-color: $white;
@@ -842,7 +863,7 @@ header {
     background-position-x: 28px;
 }
 
-/* 4.  Form 
+/* 4.  Form */
 input,
 textarea {
     border-radius: 5px;
@@ -852,10 +873,10 @@ textarea {
     width: 100%;
 }
 
-.breadcrambs{
+.breadcrambs {
     background: url(../img/slider-1.jpg);
 
-    .inner-wrap{
+    .inner-wrap {
         height: 100px;
     }
 
@@ -875,13 +896,9 @@ textarea {
     width: 100%;
 }
 
-.wpcf7 .wpcf7-form .wpcf7-not-valid-tip {
-    line-height: 35px;
-}
-
 .wpcf7 .wpcf7-form .menu-550 .wpcf7-not-valid-tip {
-    line-height: 18px;
-    padding-top: 12px;
+    line-height: 12px;
+    padding-top: 10px;
 }
 
 @media only screen and (max-device-width: 575px) {
@@ -937,12 +954,66 @@ textarea {
     width: 100%;
 }
 
-.wpcf7 .wpcf7-form p input {
+.wpcf7 textarea {
+    width: 100%;
+    background-color: #ecedef;
+    border: 0;
+    margin-top: 20px;
+    padding: 7px 15px 6px 15px;
+    border-radius: 0;
+}
+
+.wpcf7 textarea::placeholder {
+    color: #b9d4ef;
+}
+
+.footer__child-item-wrapp {
+    background-color: $white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 30px 40px 0 40px;
+
+    @media only screen and (min-device-width: 992px) {
+        padding: 30px 40px 30px 40px;
+        border-top: solid 4px $lightBlue;
+    }
+
+    h5 {
+        margin-bottom: 0;
+        border-bottom: 0;
+        color: $blue;
+        font-size: 44px;
+        font-weight: 900;
+        text-align: center;
+    }
+}
+
+.wpcf7-not-valid-tip,
+.wpcf7-mail-sent-ok {
+    color: red;
+    padding-left: 10px;
+    font-size: 10px;
+
+    @media only screen and (min-device-width: 992px) {
+        padding-left: 0;
+    }
+}
+
+.wpcf7 input {
     width: 100%;
     float: left;
-    padding: 0.75rem;
+    border-radius: 0;
+    padding: 7px 15px 6px 15px;
     border: solid 1px #eee;
+    margin-top: 20px;
+    background-color: #ecedef;
 }
+
+.wpcf7 input::placeholder {
+    color: #b9d4ef;
+}
+
 @media only screen and (max-device-width: 575px) {
     .wpcf7 .wpcf7-form p input {
         width: 100%;
@@ -991,36 +1062,50 @@ textarea {
 }
 
 .wpcf7 .wpcf7-form p .wpcf7-submit {
-    display: block;
-    height: 60px;
-    width: 230px;
-    background-color: $white;
-    border: none;
-    color: $blue;
+    height: 38px;
+    text-transform: uppercase;
+    background-color: $lightBlue;
+    font-size: 12px;
+    border-radius: 19px;
+    max-width: 200px;
+    text-align: center;
+    font-weight: bold;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-    cursor: pointer;
-    border-radius: 30px;
-    box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
+    color: $white;
+    transition: .4s;
 
-    &:focus{
+    &:focus {
         outline: none;
     }
 
-    &:active{
+    &:active {
         outline: none;
     }
 
-    @media only screen and (max-device-width: 991px) {
+    @media only screen and (min-device-width: 991px) {
         margin-bottom: 30px;
     }
 }
 
+.wpcf7 .left-side,
+.wpcf7 .right-side {
+
+    @media only screen and (min-device-width: 992px) {
+        width: 48%;
+        float: left;
+    }
+}
+
+.wpcf7 .left-side {
+    @media only screen and (min-device-width: 992px) {
+        margin-right: 4%;
+    }
+}
+
 .wpcf7 .wpcf7-form p .wpcf7-submit:hover {
-    box-shadow: none;
-    box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: $blue;
 }
 
 .wpcf7 .wpcf7-form span.textarea-comment {
@@ -1200,7 +1285,10 @@ textarea {
         line-height: 14px;
     }
 }
-*/
+
+.screen-reader-response {
+    display: none;
+}
 
 /* 5.  About us */
 .about-us {
@@ -1280,6 +1368,24 @@ textarea {
 .banner-box {
     text-align: center;
     background-color: #f5f6fb;
+
+    picture {
+
+        &.desktop {
+            display: none;
+
+            @media only screen and (min-device-width: 768px) {
+                display: block;
+            }
+        }
+
+        &.mobile {
+
+            @media only screen and (min-device-width: 768px) {
+                display: none;
+            }
+        }
+    }
 
     .banner-box__map-info-clasification {
 
@@ -1476,12 +1582,14 @@ textarea {
                 padding-bottom: 0;
                 line-height: 15px;
                 font-size: 18px;
+                text-transform: uppercase;
             }
 
             p {
                 color: $white;
                 font-weight: bold;
                 font-size: 18px;
+                line-height: 15px;
             }
         }
     }
@@ -1527,6 +1635,30 @@ textarea {
                 margin-bottom: 40px;
             }
 
+            a {
+                display: inline-block;
+                border-bottom: dotted 2px transparent;
+                transition: .4s;
+
+                &:hover {
+
+                    h3 {
+
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+
+                    p {
+                        color: $blue;
+                    }
+
+                    i {
+                        background: #212647;
+                    }
+                }
+            }
+
             .wrapp {
                 background: $blue;
                 width: 70px;
@@ -1537,6 +1669,7 @@ textarea {
 
             i {
                 margin-bottom: 10px;
+                transition: .4s;
             }
 
             h3 {
@@ -1547,6 +1680,7 @@ textarea {
                 line-height: 22px;
                 border-bottom: 0;
                 padding-bottom: 13px;
+                transition: .4s;
 
                 &::after {
                     content: "";
@@ -1556,12 +1690,14 @@ textarea {
                     background-color: $lightBlue;
                     height: 2px;
                     width: 30%;
+                    transition: .4s;
                 }
             }
 
             p {
                 color: #7f7e7c;
                 font-size: 15px;
+                transition: .4s;
             }
         }
 
@@ -1569,7 +1705,23 @@ textarea {
 
             .what-we-can__child-item {
 
+
+
+                &:nth-child(2) {
+
+                    img,
+                    source {
+                        height: 70px;
+                        margin-top: -54px;
+                        margin-left: 3px;
+                    }
+                }
+
                 &:nth-child(3) {
+
+                    a {
+                        animation-delay: .1s;
+                    }
 
                     i {
                         font-size: 83px;
@@ -1579,11 +1731,15 @@ textarea {
 
                 &:nth-child(4) {
 
+                    a {
+                        animation-delay: .2s;
+                    }
+
                     img,
                     source {
-                        height: 70px;
-                        margin-top: -54px;
-                        margin-left: 3px;
+                        height: 60px;
+                        margin-top: -45px;
+                        margin-left: 4px;
                     }
                 }
 
@@ -1604,8 +1760,30 @@ textarea {
 
                 &:nth-child(1) {
 
+                    a {
+                        // animation-delay: .3s;
+                    }
+
                     i {
                         content: "f5d2";
+                    }
+                }
+
+                &:nth-child(2) {
+
+                    a {
+                        animation-delay: .1s;
+                    }
+                }
+
+                &:nth-child(3) {
+
+                    a {
+                        animation-delay: .2s;
+                    }
+
+                    i {
+                        padding-left: 3px;
                     }
                 }
 
@@ -1705,27 +1883,28 @@ textarea {
             margin-bottom: 20px;
             text-align: center;
 
-            source, img{
+            source,
+            img {
                 margin-bottom: 10px;
             }
 
-            h4{
+            h4 {
                 color: $lightBlue;
                 font-size: 22px;
                 margin-bottom: 0;
                 border-bottom: 0;
             }
 
-            ul{
+            ul {
 
-                li{
+                li {
                     list-style: none;
 
-                    a{
+                    a {
                         color: #aab9cd;
                         transition: .4s;
 
-                        &:hover{
+                        &:hover {
                             color: $white;
                         }
                     }
@@ -1752,12 +1931,23 @@ textarea {
 /* 10. Our partners */
 .our-partners {
 
+    .row{
+        margin: 0;
+    }
+    // display: table;
+    // height: 150px;
+
     .our-partners__child-item {
+        // display: table-cell;
+        // vertical-align: middle;
 
         img,
         source {
             opacity: .8;
             transition: .4s;
+            max-height: 150px;
+            max-width: 90%;
+            object-fit: contain;
 
             &:hover {
                 opacity: 1;
@@ -1767,7 +1957,7 @@ textarea {
 }
 
 /* 11. Footer */
-footer{
+footer {
     background-color: $blue;
     padding: 30px 0 0 0;
 
@@ -1775,16 +1965,26 @@ footer{
         padding: 50px 0 0 0;
     }
 
-    .footer__child-item{
+    .footer__child-item {
         color: $white;
         font-size: 15px;
         line-height: 23px;
 
-        source, img{
+        &:nth-child(2) {
+            padding-bottom: 30px;
+
+            @media only screen and (min-device-width: 992px) {
+                padding-bottom: 0;
+                margin-top: -65px;
+            }
+        }
+
+        source,
+        img {
             margin-bottom: 20px;
         }
 
-        .footer__item-wrapper{
+        .footer__item-wrapper {
             margin-bottom: 20px;
 
             .footer__phone-wrapper {
@@ -1833,22 +2033,49 @@ footer{
         }
     }
 
-    .bottom-footer{
+    .bottom-footer {
         border-top: solid 1px $white;
         padding: 30px 0;
         text-align: center;
         color: $white;
 
-        a{
+        a {
 
-            i{
+            i {
                 color: $lightBlue;
                 transition: .4s;
 
-                &:hover{
+                &:hover {
                     color: $white;
                 }
             }
         }
+    }
+}
+
+/* 12. Scrool to top */
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    display: none;
+    background: url('../img/arrow-top.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    z-index: 99;
+    background-color: $lightBlue;
+    color: $white;
+    transition: .2s;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    font-size: 40px;
+    line-height: 34px;
+    text-align: center;
+    transform: rotate(-90deg);
+
+    &:hover {
+        background-color: $blue;
     }
 }

@@ -12,7 +12,7 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header id="navbar">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-2 col-md-12 col-sm-12 col-12 header__logo-box">
@@ -173,10 +173,15 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 banner-box__map-info">
                     <div class="map-wrapp">
                         <h3 class="anim-wrapp mov-in">Экологическая карта Украины</h3>
-                        <picture>
+                        <picture class="desktop">
                             <source srcset="/img/map.webp" type="image/webp">
                             <source srcset="/img/map.png" type="image/png">
                             <img src="/img/map.png" alphone-boxt="Экологическая схема украины">
+                        </picture>
+                        <picture class="mobile">
+                            <source srcset="/img/map-mobile.webp" type="image/webp">
+                            <source srcset="/img/map-mobile.png" type="image/png">
+                            <img src="/img/map-mobile.png" alphone-boxt="Экологическая схема украины">
                         </picture>
                         <div class="banner-box__map-info-clasification">
                             <h6 class="anim-wrapp mov-in">Воздух и грунт</h6>
@@ -259,42 +264,54 @@
                     <h2>Что мы <br> <span>предлагаем</span></h2>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 what-we-can__child-item">
-                    <i class="fa fa-list-ul"></i>
-                    <h3>Проектирование и экспертизы</h3>
-                    <p>Полный спектр проектной, оценочной и согласовательной документации.</p>
+                    <a href="#" class="anim-wrapp mov">
+                        <i class="fa fa-list-ul"></i>
+                        <h3>Проектирование и экспертизы</h3>
+                        <p>Полный спектр проектной, оценочной и согласовательной документации.</p>
+                    </a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 what-we-can__child-item">
-                    <i class="fa fa-globe"></i>
-                    <h3>Проектирование и экспертизы</h3>
-                    <p>Полный спектр проектной, оценочной и согласовательной документации.</p>
+                    <a href="#" class="anim-wrapp mov">
+                        <i class="fa fa-globe"></i>
+                        <h3>Проектирование и экспертизы</h3>
+                        <p>Полный спектр проектной, оценочной и согласовательной документации.</p>
+                    </a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 what-we-can__child-item">
-                    <div class="wrapp">
-                        <picture>
-                            <source srcset="/img/pumpjack-icon.webp" type="image/webp">
-                            <source srcset="/img/pumpjack-icon.png" type="image/png">
-                            <img alt="Недропользование" src="/img/pumpjack-icon.png">
-                        </picture>
-                    </div>
-                    <h3>Проектирование и экспертизы</h3>
-                    <p>Полный спектр проектной, оценочной и согласовательной документации.</p>
+                    <a href="#" class="anim-wrapp mov">
+                        <div class="wrapp">
+                            <picture>
+                                <source srcset="/img/nuclea.webp" type="image/webp">
+                                <source srcset="/img/nuclea.png" type="image/png">
+                                <img alt="Недропользование" src="/img/nuclea.png">
+                            </picture>
+                        </div>
+                        <h3>Проектирование и экспертизы</h3>
+                        <p>Полный спектр проектной, оценочной и согласовательной документации.</p>
+                    </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 offset-xl-3 what-we-can__child-item">
-                    <i class="fa fa-globe"></i>
-                    <h3>Проектирование и экспертизы</h3>
-                    <p>Полный спектр проектной, оценочной и согласовательной документации.</p>
+                    <a href="#" class="anim-wrapp mov">
+                        <i class="fa fa-globe"></i>
+                        <h3>Проектирование и экспертизы</h3>
+                        <p>Полный спектр проектной, оценочной и согласовательной документации.</p>
+                    </a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 what-we-can__child-item">
-                    <i class="fa fa-globe"></i>
-                    <h3>Проектирование и экспертизы</h3>
-                    <p>Полный спектр проектной, оценочной и согласовательной документации.</p>
+                    <a href="#" class="anim-wrapp mov">
+                        <i class="fa fa-globe"></i>
+                        <h3>Проектирование и экспертизы</h3>
+                        <p>Полный спектр проектной, оценочной и согласовательной документации.</p>
+                    </a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 what-we-can__child-item">
-                    <i class="fa fa-globe"></i>
-                    <h3>Проектирование и экспертизы</h3>
-                    <p>Полный спектр проектной, оценочной и согласовательной документации.</p>
+                    <a href="#" class="anim-wrapp mov">
+                        <i class="fa fa-globe"></i>
+                        <h3>Проектирование и экспертизы</h3>
+                        <p>Полный спектр проектной, оценочной и согласовательной документации.</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -335,11 +352,13 @@
                         <h4>АТ "НИКСТРОМ"</h4>
                         <ul>
                             <li>
-                                <picture>
-                                    <source srcset="/img/doc-1.webp" type="image/webp">
-                                    <source srcset="/img/doc-1.jpg" type="image/jpg">
-                                    <img alt="Никстром" src="/img/doc-1.jpg">
-                                </picture>
+                                <a href="/img/doc-1.png" target="_blank">
+                                    <picture>
+                                        <source srcset="/img/doc-1-min.webp" type="image/webp">
+                                        <source srcset="/img/doc-1-min.jpg" type="image/jpg">
+                                        <img alt="Никстром" src="/img/doc-1-min.jpg">
+                                    </picture>
+                                </a>
                             </li>
                             <li>
                                 <a href="#" target="_self">Оценка влияния на окружающую природную среду</a>
@@ -357,11 +376,13 @@
                         <h4>АТ "НИКСТРОМ"</h4>
                         <ul>
                             <li>
-                                <picture>
-                                    <source srcset="/img/doc-1.webp" type="image/webp">
-                                    <source srcset="/img/doc-1.jpg" type="image/jpg">
-                                    <img alt="Никстром" src="/img/doc-1.jpg">
-                                </picture>
+                                <a href="/img/doc-1.png" target="_blank">
+                                    <picture>
+                                        <source srcset="/img/doc-1-min.webp" type="image/webp">
+                                        <source srcset="/img/doc-1-min.jpg" type="image/jpg">
+                                        <img alt="Никстром" src="/img/doc-1-min.jpg">
+                                    </picture>
+                                </a>
                             </li>
                             <li>
                                 <a href="#" target="_self">Оценка влияния на окружающую природную среду</a>
@@ -379,11 +400,13 @@
                         <h4>АТ "НИКСТРОМ"</h4>
                         <ul>
                             <li>
-                                <picture>
-                                    <source srcset="/img/doc-1.webp" type="image/webp">
-                                    <source srcset="/img/doc-1.jpg" type="image/jpg">
-                                    <img alt="Никстром" src="/img/doc-1.jpg">
-                                </picture>
+                                <a href="/img/doc-1.png" target="_blank">
+                                    <picture>
+                                        <source srcset="/img/doc-1-min.webp" type="image/webp">
+                                        <source srcset="/img/doc-1-min.jpg" type="image/jpg">
+                                        <img alt="Никстром" src="/img/doc-1-min.jpg">
+                                    </picture>
+                                </a>
                             </li>
                             <li>
                                 <a href="#" target="_self">Оценка влияния на окружающую природную среду</a>
@@ -397,50 +420,266 @@
     <!-- / Our project -->
     <!-- Partners -->
     <section class="our-partners">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 our-partners__child-item">
-                    <picture>
-                        <source srcset="/img/polimin.webp" type="image/webp">
-                        <source srcset="/img/polimin.jpg" type="image/jpg">
-                        <img alt="Polimin" src="/img/polimin.jpg">
-                    </picture>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 our-partners__child-item">
-                    <picture>
-                        <source srcset="/img/9.webp" type="image/webp">
-                        <source srcset="/img/9.jpg" type="image/jpg">
-                        <img alt="9" src="/img/9.jpg">
-                    </picture>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 our-partners__child-item">
-                    <picture>
-                        <source srcset="/img/htz.webp" type="image/webp">
-                        <source srcset="/img/htz.jpg" type="image/jpg">
-                        <img alt="htz" src="/img/htz.jpg">
-                    </picture>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 our-partners__child-item">
-                    <picture>
-                        <source srcset="/img/zaliznyca.webp" type="image/webp">
-                        <source srcset="/img/zaliznyca.jpg" type="image/jpg">
-                        <img alt="Zaliznyca" src="/img/zaliznyca.jpg">
-                    </picture>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 our-partners__child-item">
-                    <picture>
-                        <source srcset="/img/intercorn.webp" type="image/webp">
-                        <source srcset="/img/intercorn.jpg" type="image/jpg">
-                        <img alt="intercorn" src="/img/intercorn.jpg">
-                    </picture>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 our-partners__child-item">
-                    <picture>
-                        <source srcset="/img/chornomor.webp" type="image/webp">
-                        <source srcset="/img/chornomor.jpg" type="image/jpg">
-                        <img alt="chornomor" src="/img/chornomor.jpg">
-                    </picture>
-                </div>
+        <div class="row">
+            <!-- Set up your HTML -->
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/polimin.webp" type="image/webp">
+                    <source srcset="/img/polimin.jpg" type="image/jpg">
+                    <img alt="Polimin" src="/img/polimin.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/9.webp" type="image/webp">
+                    <source srcset="/img/9.jpg" type="image/jpg">
+                    <img alt="9" src="/img/9.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/htz.webp" type="image/webp">
+                    <source srcset="/img/htz.jpg" type="image/jpg">
+                    <img alt="htz" src="/img/htz.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/zaliznyca.webp" type="image/webp">
+                    <source srcset="/img/zaliznyca.jpg" type="image/jpg">
+                    <img alt="Zaliznyca" src="/img/zaliznyca.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/intercorn.webp" type="image/webp">
+                    <source srcset="/img/intercorn.jpg" type="image/jpg">
+                    <img alt="intercorn" src="/img/intercorn.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/chornomor.webp" type="image/webp">
+                    <source srcset="/img/chornomor.jpg" type="image/jpg">
+                    <img alt="chornomor" src="/img/chornomor.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/Amik.webp" type="image/webp">
+                    <source srcset="/img/Amik.jpg" type="image/jpg">
+                    <img alt="Amik" src="/img/Amik.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/Analitik.webp" type="image/webp">
+                    <source srcset="/img/Analitik.jpg" type="image/jpg">
+                    <img alt="Analitik" src="/img/Analitik.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/Borispil.webp" type="image/webp">
+                    <source srcset="/img/Borispil.png" type="image/png">
+                    <img alt="Borispil" src="/img/Borispil.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/BuroVeritas.webp" type="image/webp">
+                    <source srcset="/img/BuroVeritas.png" type="image/png">
+                    <img alt="BuroVeritas" src="/img/BuroVeritas.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/c3p.webp" type="image/webp">
+                    <source srcset="/img/c3p.png" type="image/png">
+                    <img alt="c3p" src="/img/c3p.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/Dominik.webp" type="image/webp">
+                    <source srcset="/img/Dominik.png" type="image/png">
+                    <img alt="Dominik" src="/img/Dominik.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/Drakon.webp" type="image/webp">
+                    <source srcset="/img/Drakon.png" type="image/png">
+                    <img alt="" src="/img/Drakon.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/dream-town.webp" type="image/webp">
+                    <source srcset="/img/dream-town.png" type="image/png">
+                    <img alt="dream-town" src="/img/dream-town.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/dtek.webp" type="image/webp">
+                    <source srcset="/img/dtek.png" type="image/png">
+                    <img alt="dtek" src="/img/dtek.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/finoverde.webp" type="image/webp">
+                    <source srcset="/img/finoverde.png" type="image/png">
+                    <img alt="finoverde" src="/img/finoverde.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/helthyfarm.webp" type="image/webp">
+                    <source srcset="/img/helthyfarm.jpg" type="image/jpg">
+                    <img alt="helthyfarm" src="/img/helthyfarm.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/htx.webp" type="image/webp">
+                    <source srcset="/img/htx.png" type="image/png">
+                    <img alt="htx" src="/img/htx.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/jitloservice.webp" type="image/webp">
+                    <source srcset="/img/jitloservice.jpg" type="image/jpg">
+                    <img alt="jitloservice" src="/img/jitloservice.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/Juljany.webp" type="image/webp">
+                    <source srcset="/img/Juljany.png" type="image/png">
+                    <img alt="" src="/img/Juljany.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/kan.webp" type="image/webp">
+                    <source srcset="/img/kan.png" type="image/png">
+                    <img alt="kan" src="/img/kan.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/kievsmartcity.webp" type="image/webp">
+                    <source srcset="/img/kievsmartcity.jpg" type="image/jpg">
+                    <img alt="kievsmartcity" src="/img/kievsmartcity.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/kievteploenerg.webp" type="image/webp">
+                    <source srcset="/img/kievteploenerg.png" type="image/png">
+                    <img alt="kievteploenerg" src="/img/kievteploenerg.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/knauf.webp" type="image/webp">
+                    <source srcset="/img/knauf.png" type="image/png">
+                    <img alt="knauf" src="/img/knauf.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/likoholding.webp" type="image/webp">
+                    <source srcset="/img/likoholding.jpg" type="image/jpg">
+                    <img alt="likoholding" src="/img/likoholding.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/metro.webp" type="image/webp">
+                    <source srcset="/img/metro.png" type="image/png">
+                    <img alt="metro" src="/img/metro.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/minekonom.webp" type="image/webp">
+                    <source srcset="/img/minekonom.jpg" type="image/jpg">
+                    <img alt="minekonom" src="/img/minekonom.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/novykanal.webp" type="image/webp">
+                    <source srcset="/img/novykanal.jpg" type="image/jpg">
+                    <img alt="novykanal" src="/img/novykanal.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/opillya.webp" type="image/webp">
+                    <source srcset="/img/opillya.png" type="image/png">
+                    <img alt="opillya" src="/img/opillya.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/praveksbank.webp" type="image/webp">
+                    <source srcset="/img/praveksbank.png" type="image/png">
+                    <img alt="praveksbank" src="/img/praveksbank.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/salatejra.webp" type="image/webp">
+                    <source srcset="/img/salatejra.png" type="image/png">
+                    <img alt="salatejra" src="/img/salatejra.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/strojlajt.webp" type="image/webp">
+                    <source srcset="/img/strojlajt.jpg" type="image/jpg">
+                    <img alt="strojlajt" src="/img/strojlajt.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/unitsity.webp" type="image/webp">
+                    <source srcset="/img/unitsity.png" type="image/png">
+                    <img alt="unitsity" src="/img/unitsity.png">
+                </picture>
+            </div>
+            <!-- <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/usa.webp" type="image/webp">
+                    <source srcset="/img/usa.jpg" type="image/jpg">
+                    <img alt="usa" src="/img/usa.jpg">
+                </picture>
+            </div> -->
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/Veropack.webp" type="image/webp">
+                    <source srcset="/img/Veropack.png" type="image/png">
+                    <img alt="Veropack" src="/img/Veropack.png">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/yasensvit.webp" type="image/webp">
+                    <source srcset="/img/yasensvit.jpg" type="image/jpg">
+                    <img alt="" src="/img/yasensvit.jpg">
+                </picture>
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 our-partners__child-item">
+                <picture>
+                    <source srcset="/img/Vimbildan.webp" type="image/webp">
+                    <source srcset="/img/Vimbildan.jpg" type="image/jpg">
+                    <img alt="Vimbildan" src="/img/Vimbildan.jpg">
+                </picture>
             </div>
         </div>
     </section>
@@ -449,7 +688,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 footer__child-item">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 footer__child-item">
                     <picture>
                         <source srcset="/img/logo-footer.webp" type="image/webp">
                         <source srcset="/img/logo-footer.png" type="image/png">
@@ -457,10 +696,46 @@
                     </picture>
                     <p>Мы обеспечиваем удобство, качество и оперативность получения услуг, порядочность в ценообразовании.</p>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-6 footer__child-item">
-                    <!-- Form position -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 footer__child-item">
+                    <div class="footer__child-item-wrapp">
+                        <h5>Обратная связь</h5>
+                        <!-- Form position -->
+                        <div role="form" class="wpcf7" id="wpcf7-f5-o1" lang="ru-RU" dir="ltr">
+                            <div class="screen-reader-response" role="alert">Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
+                                <ul>
+                                    <li>Поле обязательно для заполнения.</li>
+                                    <li>Поле обязательно для заполнения.</li>
+                                </ul>
+                            </div>
+                            <form action="/debitnaftogaz/#wpcf7-f5-o1" method="post" class="wpcf7-form invalid" novalidate="novalidate">
+                                <div style="display: none;">
+                                    <input type="hidden" name="_wpcf7" value="5">
+                                    <input type="hidden" name="_wpcf7_version" value="5.1.6">
+                                    <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-o1">
+                                    <input type="hidden" name="_wpcf7_container_post" value="0">
+                                </div>
+                                <div class="left-side">
+                                    <span class="wpcf7-form-control-wrap text-491"><input type="text" name="text-491" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required wpcf7-not-valid" aria-required="true" aria-invalid="true" placeholder="Ваше имя (обязательно)"><span role="alert" class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+                                    <p></p>
+                                    <p><span class="wpcf7-form-control-wrap text-492"><input type="text" name="text-492" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required wpcf7-not-valid" aria-required="true" aria-invalid="true" placeholder="Email (обязательно)"><span role="alert" class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span></p>
+                                    <p><span class="wpcf7-form-control-wrap tel-257"><input type="tel" name="tel-257" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Контактный телефон"></span></p>
+                                    <p><span class="wpcf7-form-control-wrap text-494"><input type="text" name="text-494" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Компания"></span></p>
+                                    <p><span class="wpcf7-form-control-wrap text-494"><input type="text" name="text-494" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Тема"></span>
+                                    </p>
+                                </div>
+                                <div class="right-side">
+                                    <span class="wpcf7-form-control-wrap textarea-504"><textarea name="textarea-504" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Текст заявки"></textarea></span>
+                                    <p></p>
+                                    <p><input type="submit" value="Оформить заявку" class="wpcf7-form-control wpcf7-submit">
+                                    </p>
+                                </div>
+                                <div class="wpcf7-response-output wpcf7-validation-errors" role="alert">Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.</div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 footer__child-item">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 footer__child-item">
                     <div class="footer__item-wrapper">
                         <span class="footer__phone-wrapper">
                             <i class="fa fa-mobile"></i>
@@ -507,6 +782,9 @@
         </div>
     </footer>
     <!-- / Footer -->
+    <!-- Scrool to top -->
+    <a href="#" class="scrollup">›</a>
+    <!-- / Scrool to top -->
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
 </body>
