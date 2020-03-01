@@ -91,7 +91,17 @@ $(document).ready(function() {
         return false;
 });
 
-/* Owl carousel */
-/********************** OWL carousel ***************/
+/* Mixitup */
+$("#portfolio_grid").mixItUp();
+
+    $(".s_portfolio li").click(function() {
+        $(".s_portfolio li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".popup_content").magnificPopup({
+        type:"inline",
+        midClick: true
+    });
   
 });

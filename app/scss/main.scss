@@ -14,6 +14,7 @@
 12. Scrool to top
 13. Breadcrumbs
 14. Work zone
+15. Services controller
 
 */
 
@@ -2106,21 +2107,37 @@ footer {
     color: $blue;
     letter-spacing: -1px;
 
-    @media only screen and (min-device-width: 992px) {
-        font-size: 44px;
-        letter-spacing: 0;
-    }
-
     span{
 
         a{
             color: $lightBlue;
+
+            &:hover{
+                color: $blue;
+            }
         }
     }
 }
 
 /* 14. Work zone */
 .work-zone{
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        opacity: .75;
+    }
+
+    h1{
+        line-height: 35px;
+        display: inline-block;
+    }
 
     .left-nav{
 
@@ -2216,15 +2233,23 @@ footer {
     }
 }
 .no-webp .work-zone {
-    background-image: url(../img/bg-what-we-can.png);
+    background-color: #ffffff;
+    background-image: url(../img/about-us-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .webp .work-zone {
-    background-image: url(../img/bg-what-we-can.webp);
+    background-color: #ffffff;
+    background-image: url(../img/about-us-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+/* 15. Services controller */
+.what-we-can.work-zone-uslugi{
+
+
 }
