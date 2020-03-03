@@ -15,6 +15,7 @@
 13. Breadcrumbs
 14. Work zone
 15. Services controller
+16. Map
 
 */
 
@@ -1976,7 +1977,6 @@ textarea {
 
 /* 11. Footer */
 footer {
-    background-color: $blue;
     padding: 30px 0 0 0;
 
     @media only screen and (min-device-width: 992px) {
@@ -2052,6 +2052,7 @@ footer {
     }
 
     .bottom-footer {
+        background-color: $blue;
         border-top: solid 1px $white;
         padding: 30px 0;
         text-align: center;
@@ -2069,6 +2070,26 @@ footer {
             }
         }
     }
+}
+
+.no-webp footer {
+    background-color: $blue;
+    background-image: url('../img/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-position-x: 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.webp footer {
+    background-color: $blue;
+    background-image: url('../img/footer-bg.webp');
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-position-x: 0;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* 12. Scrool to top */
@@ -2248,8 +2269,7 @@ footer {
     background-attachment: fixed;
 }
 
-/* 15. Services controller */
-.what-we-can.work-zone-uslugi{
-
-
+/* 16. Map */
+.map{
+    padding: 0;
 }
