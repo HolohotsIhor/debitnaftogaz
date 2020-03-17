@@ -2214,6 +2214,31 @@ footer {
         color: $black;
         font-size: 15px;
 
+        figure{
+            display: inline-block;
+            float: left;
+        }
+
+        p{
+
+            a{
+                font-weight: bold;
+                color: $blue;
+            }
+        }
+
+        h2, h3, h4, h5, h6{
+            border-bottom: none;
+            text-align: left;
+            font-size: 20px;
+            line-height: 20px;
+
+            @media only screen and (min-device-width: 1200px) {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+
         strong{
             font-weight: bold;
             color: $lightBlue;
