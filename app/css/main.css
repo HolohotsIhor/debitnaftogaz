@@ -15,6 +15,7 @@
 13. Breadcrumbs
 14. Work zone
 15. Services controller
+16. Map
 
 */
 /* 1.  Fonts including */
@@ -1453,7 +1454,6 @@ textarea {
 
 /* 11. Footer */
 footer {
-  background-color: #30355d;
   padding: 30px 0 0 0; }
   @media only screen and (min-device-width: 992px) {
     footer {
@@ -1508,6 +1508,7 @@ footer {
           font-family: 'Helvetica-Bold', sans-serif;
           font-size: 18px; }
   footer .bottom-footer {
+    background-color: #30355d;
     border-top: solid 1px #fff;
     padding: 30px 0;
     text-align: center;
@@ -1519,6 +1520,24 @@ footer {
       transition: .4s; }
       footer .bottom-footer a i:hover {
         color: #fff; }
+
+.no-webp footer {
+  background-color: #30355d;
+  background-image: url("../img/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-position-x: 0;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.webp footer {
+  background-color: #30355d;
+  background-image: url("../img/footer-bg.webp");
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-position-x: 0;
+  background-size: cover;
+  background-attachment: fixed; }
 
 /* 12. Scrool to top */
 .scrollup {
@@ -1669,4 +1688,6 @@ footer {
   background-size: cover;
   background-attachment: fixed; }
 
-/* 15. Services controller */
+/* 16. Map */
+.map {
+  padding: 0; }
