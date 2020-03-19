@@ -106,6 +106,13 @@ section ul {
   section ul li {
     list-style: disc; }
 
+section ol {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding-left: 20px; }
+  section ol li {
+    list-style: decimal; }
+
 img {
   max-width: 100%; }
 
