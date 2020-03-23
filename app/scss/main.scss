@@ -1338,6 +1338,17 @@ textarea {
     .about-us__main-content {
         padding-top: 20px;
 
+        h1, h5{
+            border-bottom: 0;
+            display: inline;
+            font-size: 17px;
+            line-height: 20px;
+
+            @media only screen and (min-device-width: 992px) {
+                font-size: 20px;
+            }
+        }
+
         .anim-wrapp {
             animation-delay: .2s;
         }

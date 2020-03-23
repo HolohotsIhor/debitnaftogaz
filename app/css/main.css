@@ -1031,6 +1031,14 @@ textarea {
 
 .about-us .about-us__main-content {
   padding-top: 20px; }
+  .about-us .about-us__main-content h1, .about-us .about-us__main-content h5 {
+    border-bottom: 0;
+    display: inline;
+    font-size: 17px;
+    line-height: 20px; }
+    @media only screen and (min-device-width: 992px) {
+      .about-us .about-us__main-content h1, .about-us .about-us__main-content h5 {
+        font-size: 20px; } }
   .about-us .about-us__main-content .anim-wrapp {
     -webkit-animation-delay: .2s;
             animation-delay: .2s; }
