@@ -2165,6 +2165,30 @@ footer {
 .work-zone{
     position: relative;
 
+    .wp-block-table{
+        
+        table{
+            width: 100%;
+            max-width: 100%;
+            word-break: break-all;
+
+            tr{
+
+                &:first-child {
+                    
+                    td{
+                        background-color: #eee;
+                    }
+                }
+
+                td{
+                    padding: 5px;
+                    border: solid 1px $blue;
+                }
+            }
+        }
+    }
+
     &::before{
         content: "";
         position: absolute;
