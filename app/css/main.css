@@ -1211,15 +1211,15 @@ textarea {
       color: #0eb0ee;
       border-bottom: 0;
       margin-bottom: 0;
-      padding-bottom: 0;
-      line-height: 15px;
+      padding-bottom: 5px;
+      line-height: 20px;
       font-size: 18px;
       text-transform: uppercase; }
     .documents .documents__item-box .documents__item-box-content p {
       color: #fff;
       font-weight: bold;
       font-size: 18px;
-      line-height: 15px; }
+      line-height: 20px; }
 
 .no-webp .documents {
   background-image: url(../img/documents-bg.jpg);
@@ -1599,15 +1599,21 @@ footer {
 /* 14. Work zone */
 .work-zone {
   position: relative; }
-  .work-zone .wp-block-table table {
-    width: 100%;
-    max-width: 100%;
-    word-break: break-all; }
-    .work-zone .wp-block-table table tr:first-child td {
-      background-color: #effbff; }
-    .work-zone .wp-block-table table tr td {
-      padding: 5px;
-      border: solid 1px #30355d; }
+  .work-zone .wp-block-table {
+    width: 100%; }
+    .work-zone .wp-block-table table {
+      width: 100%;
+      max-width: 100%;
+      word-break: inherit; }
+      .work-zone .wp-block-table table tr:first-child td {
+        background-color: #effbff;
+        font-weight: bold; }
+      .work-zone .wp-block-table table tr td {
+        padding: 5px;
+        border: dashed 1px #30355d; }
+        .work-zone .wp-block-table table tr td:first-child {
+          font-weight: bold;
+          text-align: center; }
   .work-zone::before {
     content: "";
     position: absolute;
