@@ -1213,11 +1213,13 @@ textarea {
       margin-bottom: 0;
       padding-bottom: 5px;
       line-height: 20px;
-      font-size: 18px; }
+      font-size: 18px;
+      text-transform: uppercase; }
     .documents .documents__item-box .documents__item-box-content p {
       color: #fff;
-      font-size: 14px;
-      line-height: 20px; }
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: bold; }
 
 .no-webp .documents {
   background-image: url(../img/documents-bg.jpg);
@@ -1701,8 +1703,17 @@ footer {
       margin-bottom: 20px; }
     .work-zone .content-box ul {
       margin-left: 20px; }
+    .work-zone .content-box .wp-block-image {
+      width: 100%;
+      text-align: center; }
+      @media only screen and (min-device-width: 768px) {
+        .work-zone .content-box .wp-block-image {
+          width: auto; } }
     .work-zone .content-box img {
       margin-right: 20px; }
+      @media only screen and (min-device-width: 768px) {
+        .work-zone .content-box img {
+          width: auto; } }
 
 .no-webp .work-zone {
   background-color: #ffffff;

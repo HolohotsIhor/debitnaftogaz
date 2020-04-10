@@ -1615,12 +1615,14 @@ textarea {
                 padding-bottom: 5px;
                 line-height: 20px;
                 font-size: 18px;
+                text-transform: uppercase;
             }
 
             p {
                 color: $white;
-                font-size: 14px;
+                font-size: 20px;
                 line-height: 20px;
+                font-weight: bold;
             }
         }
     }
@@ -2325,8 +2327,21 @@ footer {
             margin-left: 20px;
         }
 
+        .wp-block-image{
+            width: 100%;
+            text-align: center;
+
+            @media only screen and (min-device-width: 768px) {
+                width: auto;
+            }
+        }
+
         img{
             margin-right: 20px;
+
+            @media only screen and (min-device-width: 768px) {
+                width: auto;
+            }
         }
     }
 }
