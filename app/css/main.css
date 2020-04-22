@@ -1031,14 +1031,22 @@ textarea {
 
 .about-us .about-us__main-content {
   padding-top: 20px; }
-  .about-us .about-us__main-content h1, .about-us .about-us__main-content h5 {
+  .about-us .about-us__main-content h1, .about-us .about-us__main-content h5, .about-us .about-us__main-content p {
     border-bottom: 0;
     display: inline;
     font-size: 17px;
-    line-height: 20px; }
+    line-height: 20px;
+    color: #30355d;
+    font-weight: 900; }
     @media only screen and (min-device-width: 992px) {
-      .about-us .about-us__main-content h1, .about-us .about-us__main-content h5 {
+      .about-us .about-us__main-content h1, .about-us .about-us__main-content h5, .about-us .about-us__main-content p {
         font-size: 20px; } }
+  .about-us .about-us__main-content h4 {
+    color: #787878;
+    font-size: 20px;
+    line-height: 20px; }
+  .about-us .about-us__main-content p:first-child {
+    margin-bottom: 15px; }
   .about-us .about-us__main-content .anim-wrapp {
     -webkit-animation-delay: .2s;
             animation-delay: .2s; }
@@ -1611,7 +1619,10 @@ footer {
         font-weight: bold; }
       .work-zone .wp-block-table table tr td {
         padding: 5px;
-        border: dashed 1px #30355d; }
+        border: solid 1px #30355d; }
+        @media (min-device-width: 992px) {
+          .work-zone .wp-block-table table tr td {
+            border: dashed 1px #30355d; } }
         .work-zone .wp-block-table table tr td:first-child {
           font-weight: bold;
           text-align: center; }

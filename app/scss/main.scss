@@ -1338,14 +1338,28 @@ textarea {
     .about-us__main-content {
         padding-top: 20px;
 
-        h1, h5{
+        h1, h5, p{
             border-bottom: 0;
             display: inline;
             font-size: 17px;
             line-height: 20px;
+            color: $blue;
+            font-weight: 900;
 
             @media only screen and (min-device-width: 992px) {
                 font-size: 20px;
+            }
+        }
+
+        h4{
+            color: #787878;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        p{
+            &:first-child{
+                margin-bottom: 15px;
             }
         }
 
@@ -2186,7 +2200,12 @@ footer {
 
                 td{
                     padding: 5px;
-                    border: dashed 1px $blue;
+                    border: solid 1px $blue;
+
+                    @media (min-device-width: 992px) {
+                        border: dashed 1px $blue;
+                    }
+                    
 
                     &:first-child {
                         font-weight: bold;
